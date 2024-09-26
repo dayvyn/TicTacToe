@@ -464,6 +464,14 @@ public class TicTacToe : MonoBehaviour
                 {
                     FillBox(0);
                 }
+                else if (xChoice is 4 && oChoice is 2 or 8)
+                {
+                    FillBox(5);
+                }
+                else if (xChoice is 4 && oChoice is 0 or 6)
+                {
+                    FillBox(3);
+                }
                 else if (xChoice is 1 && oChoice is 4 or 5)
                 {
                     FillBox(6);
